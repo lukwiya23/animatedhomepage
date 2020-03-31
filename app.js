@@ -12,4 +12,9 @@
        duration: 1,
        ease: Power2.easeInOut
    })
-   tl.fromTo(".hero", { width: "100%" }, { width: "80%" })
+   tl.fromTo(".hero", { width: "100%" }, {
+       width: "80%",
+       duration: 1.2,
+       ease: Power2.easeInOut
+
+   })
