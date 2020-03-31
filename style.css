@@ -37,12 +37,31 @@ section {
     height: 80vh;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
+}
+
+hero {
+    position: relative;
+    height: 60%;
+    width: 100%;
 }
 
 .hero img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    z-index: -1;
+}
+
+.hero::after {
+    content: "";
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.2;
 }
 
 .headline {
@@ -51,4 +70,5 @@ section {
     left: 120px;
     transform: translate(-20%, -70%);
     font-size: 66px;
+    z-index: 3;
 }
