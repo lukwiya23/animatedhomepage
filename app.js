@@ -7,17 +7,19 @@ tl.fromTo(".hero", {
     ease: Power2.easeInOut
 })
 tl.fromTo(".hero", { width: "100%" }, {
-    width: "80%",
-    duration: 1.2,
-    ease: Power2.easeInOut
+        width: "80%",
+        duration: 1.2,
+        ease: Power2.easeInOut
 
-})
-tl.fromTo(".slider", {
-    x: "-100%",
+    })
+    .fromTo(".slider", {
+        x: "-100%",
 
-}, {
-    x: "0%",
-    ease: Power1.easeInOut,
-    duration: 1.2
+    }, {
+        x: "0%",
+        ease: Power2.easeInOut,
+        duration: 1.2
 
-})
+    })
+    .fromTo("#logo", { opacity: 0, x: 30 }, { opacity: 1, x: 0, duration: 0.5 })
+    .fromTo(".hamburger", { opacity: 0, x: 30 }, { opacity: 1, x: 0, duration: 0.5 })
