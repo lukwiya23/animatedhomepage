@@ -48,8 +48,8 @@ header:hover {
 
 .container {
     background-image: url("lorde.jpg");
-    background-size: contain;
-    width: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 80vh;
     margin: auto;
     z-index: -2;
