@@ -35,17 +35,23 @@
     <script src="./gsap-core.js"></script>
     <script src="./app.js"></script>
     <script>
-        gsap.to(".headline", {
-            rotation: 360,
-            x: 100,
-            duration: 3
-        })
+        gsap.fromTo(".headline", {
 
-        const t1 = gsap.timeline()
-        t1.fromTo(".header", {
-            height: 0
+            y: -100,
+            fontSize: 85
+
         }, {
-            height: 80,
+            rotation: 360,
+            x: 350,
+            duration: 1.5,
+            fontSize: 45,
+
+        })
+        const tl = gsap.timeline()
+        tl.fromTo(".container", {
+            height: "0"
+        }, {
+            height: "80vh",
             duration: 1
         })
     </script>

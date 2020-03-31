@@ -8,7 +8,7 @@ header {
     width: 100%;
     height: 15vh;
     border: 1px dotted black;
-    position: relative;
+    transition: .5s ease-in-out;
 }
 
 nav {
@@ -42,7 +42,7 @@ nav .navbar {
     color: yellow;
 }
 
-nav:hover {
+header:hover {
     border: 1px dotted wheat;
 }
 
@@ -54,6 +54,7 @@ nav:hover {
     margin: auto;
     z-index: -2;
     position: relative;
+    margin-top: 5px;
 }
 
 .container::after {
@@ -68,7 +69,7 @@ nav:hover {
 .headline {
     z-index: 3;
     margin-top: -150px;
-    margin-left: 110px;
+    margin-left: -300px;
     font-size: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     cursor: crosshair;
