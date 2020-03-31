@@ -9,5 +9,7 @@
        height: "0%"
    }, {
        height: "80%",
-       duration: 1
+       duration: 1,
+       ease: Power2.easeInOut
    })
+   tl.fromTo(".hero", { width: "100%" }, { width: "80%" })
