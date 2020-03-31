@@ -49,5 +49,6 @@ section {
     position: absolute;
     top: 70%;
     left: 120px;
-    font-size: 35px;
+    transform: translate(-20%, -70%);
+    font-size: 66px;
 }
