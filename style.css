@@ -4,90 +4,73 @@
     box-sizing: border-box;
 }
 
-header {
+.slider {
+    position: absolute;
     width: 100%;
-    height: 15vh;
-    border: 1px dotted black;
-    transition: .5s ease-in-out;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(to left, wheat, whitesmoke);
 }
 
 nav {
-    width: 100%;
-    height: 100%;
-    transition: 3s ease;
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    min-height: 10vh;
+    align-items: center;
 }
 
-nav .navbar {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    padding: 40px 0;
-    margin-left: 40%;
-}
-
-.navbar li {
-    padding: 0 10px;
-}
-
-.navbar li a {
-    text-decoration: none;
-    font-size: 1.4rem;
-    color: black;
+#logo {
+    grid-column: 2/3;
+    font-size: 35px;
     font-family: 'Courier New', Courier, monospace;
-    color: wheat;
-    transition: .2s ease-in-out;
 }
 
-.navbar li a:hover {
-    color: yellow;
+.hamburger {
+    justify-self: end;
+    height: 25px;
+    width: 25px;
 }
 
-header:hover {
-    border: 1px dotted wheat;
-}
-
-.container {
-    background-image: url("lorde.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+section {
+    display: flex;
     height: 80vh;
-    margin: auto;
-    z-index: -2;
-    position: relative;
-    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
 }
 
-.container::after {
+.hero {
+    position: relative;
+    height: 60%;
+    width: 100%;
+}
+
+.hero img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -3;
+}
+
+.hero::after {
     content: "";
+    background: black;
     width: 100%;
     height: 100%;
     position: absolute;
-    background: black;
-    opacity: 0.8;
+    left: 0;
+    top: 0;
+    opacity: 0.2;
 }
 
 .headline {
+    position: absolute;
+    top: 70%;
+    left: 120px;
+    transform: translate(-20%, -70%);
+    font-size: 66px;
     z-index: 3;
-    margin-top: -150px;
-    margin-left: -300px;
-    font-size: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    cursor: crosshair;
-    transition: .5s ease-in-out;
-    position: absolute;
-    color: white;
-}
-
-.headline:hover {
-    color: aquamarine;
-}
-
-.slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: -3;
-    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }

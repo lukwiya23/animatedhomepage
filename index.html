@@ -4,62 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lorde Music</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <header class="header">
+    <header>
         <nav>
-
-            <ul class="navbar">
-                <li>
-                    <a href="">EXPLORE</a>
-                </li>
-                <li>
-                    <a href="">ABOUT</a>
-                </li>
-                <li>
-                    <a href="">FAQ</a>
-                </li>
-            </ul>
+            <h3 id="logo">home</h3>
+            <img src="./si-glyph-align-right.svg" alt="" class="hamburger">
         </nav>
+        <section>
+            <div class="hero">
+                <img src="./lorde2.png">
+                <h1 class="headline">LORDE</h1>
+            </div>
+        </section>
     </header>
 
-    <section class="container">
-    </section>
-    <h1 class="headline">LORDE</h1>
     <div class="slider"></div>
-
     <script src="./gsap.min.js"></script>
     <script src="./gsap-core.js"></script>
     <script src="./app.js"></script>
     <script>
-        gsap.fromTo(".headline", {
-
-            y: -100,
-            fontSize: 85
-
-        }, {
-            rotation: 360,
-            x: 350,
-            duration: 1.5,
-            fontSize: 45,
-
-        })
-        const tl = gsap.timeline()
-        tl.fromTo(".container", {
-            height: "0"
-        }, {
-            height: "80vh",
-            duration: 1
-        })
-        tl.fromTo(".navbar", {
-            marginTop: -150
-        }, {
-            marginTop: 0,
-            duration: 0.8
-        })
     </script>
 </body>
 
